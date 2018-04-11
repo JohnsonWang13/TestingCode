@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gX8-eE-qaG" customClass="PhotoCell" customModule="JohnsonTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r6s-Lx-xFc">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxf-6P-fge">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Yxf-6P-fge" secondAttribute="bottom" id="396-YH-MKa"/>
+                <constraint firstItem="r6s-Lx-xFc" firstAttribute="leading" secondItem="gX8-eE-qaG" secondAttribute="leading" id="9LV-Hy-37g"/>
+                <constraint firstAttribute="bottom" secondItem="r6s-Lx-xFc" secondAttribute="bottom" id="AcP-2G-gO8"/>
+                <constraint firstItem="Yxf-6P-fge" firstAttribute="top" secondItem="gX8-eE-qaG" secondAttribute="top" id="GG3-G7-E4n"/>
+                <constraint firstItem="Yxf-6P-fge" firstAttribute="leading" secondItem="gX8-eE-qaG" secondAttribute="leading" id="IGi-kI-Pej"/>
+                <constraint firstItem="r6s-Lx-xFc" firstAttribute="top" secondItem="gX8-eE-qaG" secondAttribute="top" id="IuC-Gx-UyC"/>
+                <constraint firstAttribute="trailing" secondItem="Yxf-6P-fge" secondAttribute="trailing" id="dR1-jF-ZVP"/>
+                <constraint firstAttribute="trailing" secondItem="r6s-Lx-xFc" secondAttribute="trailing" id="ymJ-bW-0zW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="h8T-jc-cGo"/>
+            <connections>
+                <outlet property="imageView" destination="r6s-Lx-xFc" id="dDo-gX-B15"/>
+                <outlet property="selectedMask" destination="Yxf-6P-fge" id="lb5-Ov-Imq"/>
+            </connections>
+            <point key="canvasLocation" x="368" y="56"/>
+        </collectionViewCell>
+    </objects>
+</document>
